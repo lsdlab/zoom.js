@@ -273,6 +273,7 @@
   // wait for dom ready (incase script included before body)
   $(function () {
     new ZoomService().listen()
+    window.ZoomService = ZoomService
   })
 
 }(jQuery)

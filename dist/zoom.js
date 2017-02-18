@@ -1,6 +1,6 @@
 /**
  * zoom.js - It's the best way to zoom an image
- * @version v0.0.2
+ * @version v0.0.3
  * @link https://github.com/fat/zoom.js
  * @license MIT
  */
@@ -280,6 +280,7 @@
   // wait for dom ready (incase script included before body)
   $(function () {
     new ZoomService().listen()
+    window.ZoomService = ZoomService
   })
 
 }(jQuery)
